@@ -18,4 +18,3 @@ Weather Description
 Handy scripts for the weather forecasting project.
       """,
 )
-

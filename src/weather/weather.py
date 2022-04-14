@@ -5,12 +5,13 @@
 # Importing Libraries
 import requests
 
+
 def forecast(zipcode):
-    
+
     zipcode = str(zipcode)
     # zipcode = input("User's US Post Office ZIP Code: ")
     print(f"User's US Post Office ZIP Code: {zipcode} \n")
-    
+
     # Generating URL based on User's Postal ZIP Code
     url = "http://wttr.in/" + zipcode
 
@@ -31,7 +32,6 @@ def forecast(zipcode):
 
     """Getting the Current Temperature, Feels-Like Temperature, and
     Weather Description for user's ZIP Code"""
-
 
     # Assigning current condition key to a variable and indexing it
     current_condition = response["current_condition"][0]
@@ -57,7 +57,6 @@ def forecast(zipcode):
     temp_F_float = float(temp_F)
     FeelsLikeF_float = float(FeelsLikeF)
 
-
     def f_to_c(f_temp):
         """Convert the units from Fahrenheit to Celsius."""
         c_temp = (5 / 9) * (f_temp - 32)
@@ -65,14 +64,12 @@ def forecast(zipcode):
         c_rounded = round(c_temp, 1)
         return c_rounded
 
-
     # Displaying Temperatures in Celsius from the defined function FtoC
     print(f"The Current Temperature in Celsius is {f_to_c(temp_F_float)}°C")
     print(
         f"""The Feels-Like Temperature in Celsius is {f_to_c(FeelsLikeF_float)}°C
         """
     )
-
 
     # Initializing variable for the current temperature obtained in Celsius
     num = f_to_c(temp_F_float)
@@ -88,7 +85,6 @@ def forecast(zipcode):
         print(f"Today's weather in your location: \u26C5 {num}°C \n")
     elif num > 30:
         print(f"Today's weather in your location:\u2600\uFE0F {num}°C \n")
-
 
     # Since the JSON output has weather forecast data at a 3 hour time step,
     # retrieving data for 1 time step from now at index 1
