@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+weatherfc/__init__.py
+weatherfc/main.py
+weatherfc/test_wfc.py
+weatherfc/weatherfc.py
+weatherfc.egg-info/PKG-INFO
+weatherfc.egg-info/SOURCES.txt
+weatherfc.egg-info/dependency_links.txt
+weatherfc.egg-info/top_level.txt
