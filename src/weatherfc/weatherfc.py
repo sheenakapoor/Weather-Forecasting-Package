@@ -6,7 +6,11 @@
 import requests
 
 def forecast(zipcode):
-
+    
+    zipcode = str(zipcode)
+    # zipcode = input("User's US Post Office ZIP Code: ")
+    print(f"User's US Post Office ZIP Code: {zipcode} \n")
+    
     # Generating URL based on User's Postal ZIP Code
     url = "http://wttr.in/" + zipcode
 
