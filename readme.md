@@ -8,12 +8,12 @@
 
 Your project should:
 
--   [ ] Put a link to your Deepnote repository where you did the work in the
+-   [x] Put a link to your Deepnote repository where you did the work in the
     readme.md, and make sure to give Prof. Kitchin edit access to it.
--   [ ] solve a practical problem that is not too trivial, and that a reusable
+-   [x] solve a practical problem that is not too trivial, and that a reusable
     package would be helpful for.
--   [ ] be pip installable
--   [ ] have a License
+-   [x] be pip installable
+-   [x] have a License
 -   [ ] have a readme.md file that explains what it is, and how to use it. If you
     have a command line utility, there should be examples of how to use it, and
     the output. If your package is for a notebook you should provide an example
