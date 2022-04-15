@@ -1,7 +1,7 @@
 #!/usr/bin/env python
+"""example file."""
 
 import weather
 
 zipcode = input("User's US Post Office ZIP Code: ")
-# print(f"ZIP Code: {zipcode} \n")
 weather.forecast(zipcode)

@@ -7,7 +7,12 @@ import requests
 
 
 def forecast(zipcode):
+    """Take ZIP Code from User.
 
+    Display Current, 'Feels-like' Temp,Weather Description,
+    Convert temp from F to C,Display emojis based on current temp,
+    and forecast for the next 3 hours.
+    """
     zipcode = str(zipcode)
     # zipcode = input("User's US Post Office ZIP Code: ")
     print(f"User's US Post Office ZIP Code: {zipcode} \n")
@@ -90,7 +95,7 @@ def forecast(zipcode):
     # retrieving data for 1 time step from now at index 1
     three_hours = response["weather"][0]["hourly"][1]
 
-    # flt: feels like temperature, at: actual temperature, wd: weather description
+    # flt:feels like temperature,at:actual temperature,wd:weather description
     next_at_F = three_hours["tempF"]
     next_flt_F = three_hours["FeelsLikeF"]
     next_at_C = three_hours["tempC"]
