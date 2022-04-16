@@ -4,4 +4,4 @@
 import weather
 
 zipcode = input("User's US Post Office ZIP Code: ")
-weather.forecast(zipcode)
+weather.forecast(zipcode)   # pylint: disable=E1101

@@ -3,14 +3,15 @@
 
 
 # Importing Libraries
+import sys
 import requests
 
 
 def forecast(zipcode):
     """Take ZIP Code from User.
 
-    Display Current, 'Feels-like' Temp,Weather Description,
-    Convert temp from F to C,Display emojis based on current temp,
+    Display Current, 'Feels-like' Temp, Weather Description,
+    Convert temp from F to C, Display emojis based on current temp,
     and forecast for the next 3 hours.
     """
     zipcode = str(zipcode)
@@ -23,44 +24,44 @@ def forecast(zipcode):
     # Checking for valid Zip Code
 
     # Generating URL with data of valid US Postal ZIP codes
-    checkURL = "http://www.zip-codes.com/zip-code/" + zipcode
-    status_code = requests.get(checkURL).status_code
+    checkurl = "http://www.zip-codes.com/zip-code/" + zipcode
+    status_code = requests.get(checkurl).status_code
 
     # Test for validity of user's ZIP code
     if status_code == 404:
         print("Invalid Zip Code, Try again")
-        exit()
+        sys.exit()
 
     # Converting to JSON
     params = (("format", "j1"),)
     response = requests.get(url, params=params).json()
 
-    """Getting the Current Temperature, Feels-Like Temperature, and
-    Weather Description for user's ZIP Code"""
+    # Getting the Current Temperature, Feels-Like Temperature, and
+    # Weather Description for user's ZIP Code"""
 
     # Assigning current condition key to a variable and indexing it
     current_condition = response["current_condition"][0]
 
     # Assigning variables and indexing to get Current Temperature,
     # Feels-Like Temperature and Weather Description for user's ZIP Code
-    temp_F = current_condition["temp_F"]
-    FeelsLikeF = current_condition["FeelsLikeF"]
-    weatherDesc = current_condition["weatherDesc"][0]["value"]
+    temp_f = current_condition["temp_F"]
+    feelslikef = current_condition["FeelsLikeF"]
+    weatherdesc = current_condition["weatherDesc"][0]["value"]
 
     # Displaying weather conditions with temperatures in Fahrenheit
     print(
         f"""The weather conditions in your location are displayed below:
-        Current Temperature: {temp_F}°F
-        Feels like Temperature: {FeelsLikeF}°F
-        Weather Description: {weatherDesc} \n """
+        Current Temperature: {temp_f}°F
+        Feels like Temperature: {feelslikef}°F
+        Weather Description: {weatherdesc} \n """
     )
 
     # Conversion of Current Temperature and Feels-Like Temperature
     # from F to C respectively.
 
     # Changing type from str to float for Math Operations
-    temp_F_float = float(temp_F)
-    FeelsLikeF_float = float(FeelsLikeF)
+    temp_f_float = float(temp_f)
+    feelslikef_float = float(feelslikef)
 
     def f_to_c(f_temp):
         """Convert the units from Fahrenheit to Celsius."""
@@ -70,17 +71,17 @@ def forecast(zipcode):
         return c_rounded
 
     # Displaying Temperatures in Celsius from the defined function FtoC
-    print(f"The Current Temperature in Celsius is {f_to_c(temp_F_float)}°C")
+    print(f"The Current Temperature in Celsius is {f_to_c(temp_f_float)}°C")
     print(
-        f"""The Feels-Like Temperature in Celsius is {f_to_c(FeelsLikeF_float)}°C
+        f"""The Feels-Like Temperature in Celsius is {f_to_c(feelslikef_float)}°C
         """
     )
 
     # Initializing variable for the current temperature obtained in Celsius
-    num = f_to_c(temp_F_float)
+    num = f_to_c(temp_f_float)
 
-    """Displaying Emojis for Custom Ranges (4 different ranges) of
-    Current Temperature (in Celsius)"""
+    # Displaying Emojis for Custom Ranges (4 different ranges) of Current
+    # Temperature (in Celsius)
 
     if num <= 0:
         print(f"Today's weather in your location: \u2744\uFE0F {num}°C \n")
@@ -93,18 +94,11 @@ def forecast(zipcode):
 
     # Since the JSON output has weather forecast data at a 3 hour time step,
     # retrieving data for 1 time step from now at index 1
-    three_hours = response["weather"][0]["hourly"][1]
-
-    # flt:feels like temperature,at:actual temperature,wd:weather description
-    next_at_F = three_hours["tempF"]
-    next_flt_F = three_hours["FeelsLikeF"]
-    next_at_C = three_hours["tempC"]
-    next_flt_C = three_hours["FeelsLikeC"]
-    next_wd = three_hours["weatherDesc"][0]["value"]
+    hr3 = response["weather"][0]["hourly"][1]
 
     print(
         f"""Weather forecast for three hours from now is as follows:
-        Current Temperature: {next_at_F}°F = {next_at_C}°C
-        Feels like Temperature: {next_flt_F}°F = {next_flt_C}°C
-        Weather Description: {next_wd} \n"""
+        Current Temperature: {hr3["tempF"]}°F = {hr3["tempC"]}°C
+        Feels like Temperature: {hr3["FeelsLikeF"]}°F = {hr3["FeelsLikeC"]}°C
+        Weather Description: {hr3["weatherDesc"][0]["value"]} \n"""
     )
