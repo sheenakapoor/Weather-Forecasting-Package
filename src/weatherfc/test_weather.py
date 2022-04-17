@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """example file."""
 
-import weather
+from weatherfc.weather import forecast
 
 zipcode = input("User's US Post Office ZIP Code: ")
-weather.forecast(zipcode)  # pylint: disable=E1101
+forecast(zipcode)  # pylint: disable=E1101
