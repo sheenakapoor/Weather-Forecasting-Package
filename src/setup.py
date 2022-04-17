@@ -1,4 +1,5 @@
 """Install package."""
+# pylint: disable=duplicate-code
 
 from setuptools import setup
 
@@ -10,7 +11,11 @@ setup(
     maintainer_email="sheenak@andrew.cmu.edu",
     license="GPL",
     packages=["weatherfc"],
-    scripts=["weatherfc/weather.py", "weatherfc/test_weather.py"],
+    scripts=[
+        "weatherfc/weather.py",
+        "weatherfc/test_weather.py",
+        "weatherfc/example_weather.py",
+    ],
     setup_requires=[],
     data_files=["LICENSE"],
     # install_requires=[],

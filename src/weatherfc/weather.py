@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Python script."""
+# pylint: disable=duplicate-code
 
 
 # Importing Libraries
