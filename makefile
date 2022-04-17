@@ -13,4 +13,4 @@ clean:
 	find . -name *.pyc -delete
 	find . -type d -name "__pycache__" -exec rm -rf {} +
 
-all: black flake8 coverage
+all: black flake8 coverage clean
