@@ -2,7 +2,7 @@
 
 # Assignments
 
--   [ ] Put your project proposal in a document called project-proposal.md. You
+-   [x] Put your project proposal in a document called project-proposal.md. You
     should refine this to clarify your plan and what you want your project to
     accomplish.
 
