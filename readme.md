@@ -18,7 +18,7 @@ Your project should:
     have a command line utility, there should be examples of how to use it, and
     the output. If your package is for a notebook you should provide an example
     notebook, including data if it is needed.
--   [ ] Should pass black, flake8 and pylint (ideally you would setup pre-commit
+-   [x] Should pass black, flake8 and pylint (ideally you would setup pre-commit
     hooks to help ensure this)
 -   [ ] Should have some tests that are run in a GitHUB action, and your project
     should pass them.
