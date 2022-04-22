@@ -10,7 +10,7 @@ setup(
     maintainer="Sheena Kapoor",
     maintainer_email="sheenak@andrew.cmu.edu",
     license="GPL",
-    packages=["weatherfc"],
+    packages=["src/weatherfc"],
     scripts=[
         "src/weatherfc/weather.py",
         "src/weatherfc/test_weather.py",
