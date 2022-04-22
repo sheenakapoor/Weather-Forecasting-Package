@@ -41,7 +41,7 @@ Example
 ```
 
 The output would look something like this - 
-
+```python
 User's US Post Office ZIP Code: 15213 
 
 The weather conditions in your location are displayed below:
@@ -58,3 +58,4 @@ Weather forecast for three hours from now is as follows:
         Current Temperature: 46°F = 8°C
         Feels like Temperature: 45°F = 7°C
         Weather Description: Clear 
+```
