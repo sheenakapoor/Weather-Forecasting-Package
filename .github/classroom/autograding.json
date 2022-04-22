@@ -1,3 +1,14 @@
 {
     "tests":
-       {}}
+       [
+  {
+    "name": "project-tests",
+    "setup": "pip3 install pytest",
+    "run": "pytest .github/tests/test_package.py",
+    "input": "",
+    "ouput": "",
+    "comparison": "included",
+    "timeout": 10
+  }
+
+]}
