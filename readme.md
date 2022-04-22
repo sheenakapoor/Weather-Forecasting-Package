@@ -10,6 +10,7 @@ Your project should:
 
 -   [x] Put a link to your Deepnote repository where you did the work in the
     readme.md, and make sure to give Prof. Kitchin edit access to it.
+    Repository: https://github.com/S22-06682/project-sheenakapoor
 -   [x] solve a practical problem that is not too trivial, and that a reusable
     package would be helpful for.
 -   [x] be pip installable
