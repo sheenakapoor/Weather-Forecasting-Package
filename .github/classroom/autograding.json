@@ -9,6 +9,35 @@
     "ouput": "",
     "comparison": "included",
     "timeout": 10
+  },
+  {
+    "name": "test-black",
+    "setup": "pip3 install pytest black",
+    "run": "pytest .github/tests/test_package.py::test_black",
+    "input": "",
+    "ouput": "",
+    "comparison": "included",
+    "timeout": 10,
+    "points": 2
+  },
+  {
+    "name": "test-flake8",
+    "setup": "pip3 install pytest flake8",
+    "run": "pytest .github/tests/test_package.py::test_flake8",
+    "input": "",
+    "ouput": "",
+    "comparison": "included",
+    "timeout": 10,
+    "points": 5
+  },
+  {
+    "name": "test-pylint",
+    "setup": "pip3 install pytest pylint",
+    "run": "pytest .github/tests/test_package.py::test_pylint",
+    "input": "",
+    "ouput": "",
+    "comparison": "included",
+    "timeout": 10,
+    "points": 5
   }
-
 ]}
