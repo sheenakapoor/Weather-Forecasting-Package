@@ -2,7 +2,6 @@
 """Python script."""
 # pylint: disable=duplicate-code
 
-
 # Importing Libraries
 import sys
 import requests
@@ -71,7 +70,7 @@ def forecast(zipcode):
         c_rounded = round(c_temp, 1)
         return c_rounded
 
-    # Displaying Temperatures in Celsius from the defined function FtoC
+    # Displaying Temperatures in Celsius from the defined function f_to_c
     print(f"The Current Temperature in Celsius is {f_to_c(temp_f_float)}°C")
     print(
         f"""The Feels-Like Temperature in Celsius is {f_to_c(feelslikef_float)}°C
