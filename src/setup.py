@@ -18,7 +18,9 @@ setup(
     ],
     setup_requires=[],
     data_files=["LICENSE"],
-    # install_requires=[],
+    install_requires=[
+        "requests",
+    ],
     long_description="""\
 Weather Description
 ==============
