@@ -1,6 +1,5 @@
 """GitHub Actions tests."""
 import os
-import subprocess
 
 
 def test_src_dir():
@@ -38,21 +37,6 @@ def test_bin():
 def test_package_install():
     """Check that package is installable."""
     assert 0 == os.system("pip install src/")
-
-
-def test_package():
-    """Check that file in package gets executed."""
-    path = "/root/work/project-sheenakapoor/src/weatherfc/bin/wfc.py"
-    subprocess.run(
-        ["python", path, "15232"],
-        capture_output=True,
-        check=True,
-    ).stdout.decode()
-
-
-def test_egginfo():
-    """Check that egginfo file exists."""
-    assert os.path.isdir("src/weather.egg-info")
 
 
 def test_makefile():
