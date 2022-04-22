@@ -17,7 +17,7 @@
     "input": "",
     "ouput": "",
     "comparison": "included",
-    "timeout": 10,
+    "timeout": 10
   },
   {
     "name": "test-flake8",
@@ -26,7 +26,7 @@
     "input": "",
     "ouput": "",
     "comparison": "included",
-    "timeout": 10,
+    "timeout": 10
   },
   {
     "name": "test-pylint",
@@ -35,6 +35,6 @@
     "input": "",
     "ouput": "",
     "comparison": "included",
-    "timeout": 10,
+    "timeout": 10
   }
 ]}
