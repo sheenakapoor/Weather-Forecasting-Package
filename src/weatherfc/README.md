@@ -2,14 +2,6 @@
 
 Repository for the project: https://github.com/S22-06682/project-sheenakapoor
 
-
-
-
-have a readme.md file that explains what it is, and how to use it. If you
-    have a command line utility, there should be examples of how to use it, and
-    the output. If your package is for a notebook you should provide an example
-    notebook, including data if it is needed.
-
 ## Weather Forecasting Package
 This github repo hosts a simple code for giving the weather forecast for current temperature,
 feels like temperature, Weather Description.
@@ -19,7 +11,7 @@ How to install in another (notebook/ terminal) -
 Installation
 -------------
 ```python
-!pip install git+https://github.com/S22-06682/project-sheenakapoor
+python -m pip install "git+https://github.com/S22-06682/project-sheenakapoor.git#egg=subdir&subdirectory=src"
 ```
 
 Argument
@@ -36,7 +28,7 @@ Once installed, you can import the weather forecasting module as follows:
 Example
 --------
 ```python
->>> from src.weatherfc.weather import forecast
+>>> from weatherfc.weather import forecast
 >>> forecast(15213)                               #enter user zipcode
 ```
 
