@@ -37,7 +37,7 @@ def forecast(zipcode):
     response = requests.get(url, params=params).json()
 
     # Getting the Current Temperature, Feels-Like Temperature, and
-    # Weather Description for user's ZIP Code"""
+    # Weather Description for user's ZIP Code
 
     # Assigning current condition key to a variable and indexing it
     current_condition = response["current_condition"][0]
