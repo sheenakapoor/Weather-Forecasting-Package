@@ -1,10 +1,19 @@
 # Weather Forecasting
 
 Repository for the project: https://github.com/S22-06682/project-sheenakapoor
+Deepnote Project Link: 
 
 ## Weather Forecasting Package
 This github repo hosts a simple code for giving the weather forecast for current temperature,
 feels like temperature, Weather Description.
+
+The purpose of this package:
+1. Take input of US Post Office ZIP Code from the user.
+2. Retrieve weather data for the ZIP code from http://wttr.in/
+3. Display current temperature, 'feels like' temperature in Fahrenheit along with weather description.
+4. Convert temperature from Fahrenheit to Celsius.
+5. Show an emoji based on range of current temperature that was converted to Celsius units.
+6. Display weather forecast for three hours from current time.
 
 How to install in another (notebook/ terminal) - 
 
@@ -17,8 +26,7 @@ python -m pip install "git+https://github.com/S22-06682/project-sheenakapoor.git
 Argument
 ----------
 zipcode: str
-
-         Valid US Postal Zip Code
+        Valid US Postal Zip Code
 
 Returns
 -------
@@ -102,3 +110,14 @@ User's US Post Office ZIP Code: 10
 
 Invalid Zip Code, Try again
 ```
+
+NOTE
+-----
+The user can also directly import the weatherfc.example_weather module and be able
+to input the zipcode and get the results without writing additional lines of code
+for inputting the zipcode.
+
+
+Scope for additional improvements:
+In the future, one could work on defining separate functions for each task performed in
+the main script (weather.py)
