@@ -23,7 +23,7 @@ jobs:
         name: "** Grading and Feedback **"
         continue-on-error: true
 
-  my_fourth_job:
+  oytest_tests:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
