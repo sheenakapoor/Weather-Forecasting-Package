@@ -1,7 +1,8 @@
 # Weather Forecasting
 
 Repository for the project: https://github.com/S22-06682/project-sheenakapoor
-Deepnote Project Link: 
+
+Deepnote Project Link: https://deepnote.com/project/06682-Project-9f119166-fb10-4b83-9e96-d148b4f2210a/%2Fproject-sheenakapoor
 
 ## Weather Forecasting Package
 This github repo hosts a simple code for giving the weather forecast for current temperature,
