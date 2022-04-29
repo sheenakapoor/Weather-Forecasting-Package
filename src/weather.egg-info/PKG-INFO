@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: weather
+Version: 0.0.1
+Summary: weather forecasting
+Home-page: UNKNOWN
+Maintainer: Sheena Kapoor
+Maintainer-email: sheenak@andrew.cmu.edu
+License: GPL
+Description: Weather Description
+        ==============
+        Handy scripts for the weather forecasting project.
+              
+Platform: UNKNOWN
