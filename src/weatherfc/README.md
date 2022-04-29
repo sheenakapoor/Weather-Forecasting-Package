@@ -22,6 +22,11 @@ Installation (from terminal)
 ```python
 python -m pip install "git+https://github.com/S22-06682/project-sheenakapoor.git#egg=subdir&subdirectory=src"
 ```
+or
+
+```python
+pip install src
+```
 
 Argument
 ----------
