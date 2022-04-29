@@ -4,7 +4,7 @@
 
 import requests
 import pytest
-from weatherfc.weather import forecast
+from src.weatherfc.weather import forecast
 
 
 def test_1():
