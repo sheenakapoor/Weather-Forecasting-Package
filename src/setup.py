@@ -13,7 +13,6 @@ setup(
     packages=["weatherfc"],
     scripts=[
         "weatherfc/weather.py",
-        "weatherfc/test_weather.py",
         "weatherfc/example_weather.py",
     ],
     setup_requires=[],
