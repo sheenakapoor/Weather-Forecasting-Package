@@ -6,7 +6,7 @@ Deepnote Project Link: https://deepnote.com/project/06682-Project-9f119166-fb10-
 
 ## Weather Forecasting Package
 This github repo hosts a simple code for giving the weather forecast for current temperature,
-feels like temperature, Weather Description.
+feels like temperature, and provides weather description.
 
 The purpose of this package:
 1. Take input of US Post Office ZIP Code from the user.
@@ -16,7 +16,6 @@ The purpose of this package:
 5. Show an emoji based on range of current temperature that was converted to Celsius units.
 6. Display weather forecast for three hours from current time.
 
-How to install in another (notebook/ terminal) - 
 
 Installation (from terminal)
 -------------
