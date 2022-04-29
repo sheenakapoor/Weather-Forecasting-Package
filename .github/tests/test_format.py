@@ -13,7 +13,6 @@ def test_flake8():
     assert 0 == os.system("flake8 --count .")
 
 
-#
-# def test_pylint():
-#     """Test for pylint."""
-#     assert 0 == os.system("pylint src/")
+def test_pylint():
+    """Test for pylint."""
+    assert 0 == os.system("pylint src/")

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """test file."""
 # pylint: disable=duplicate-code
+# pylint: disable=E0401
 
 import requests
 import pytest
